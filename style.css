@@ -1,0 +1,81 @@
+/* - Dark Blue: hsl(240, 38%, 20%)
+- Grayish Blue: hsl(240, 18%, 77%) */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .slider-container{
+    background-image: url(images/pattern-bg.svg);
+} */
+ body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+ }
+ .container{
+    display: flex; 
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: space-around;
+   width: 768px;
+ }
+ .feedback{
+    position: relative;
+
+ }
+ .feedback img{
+    height: 60px;
+    position: absolute;
+    top: -40px;
+    left: 50px;
+ }
+ .feedback p {
+    font-size: 18px;
+    color:hsl(240, 38%, 20%) ;
+    font-weight: 300;
+ }
+ .name{
+    color:hsl(240, 38%, 20%) ;
+    padding: 15px;
+
+ }
+ .role{
+    color: hsl(240, 18%, 77%) ;
+    padding-left: 10px ;
+ }
+ .slider-container{
+   position: relative;
+ }
+ .btn{
+   display: inline-block;
+   background-color: white;
+   border-radius: 20px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+   /* position: absolute;
+   bottom: 9px; */
+ }
+ .btn img{
+   cursor: pointer;
+   padding: 8px 10px 5px 10px;
+ }
+ @media screen  and (max-width: 800px){
+   .container{
+      flex-direction: column;
+      width: 340px;
+   }
+   .feedback{
+      text-align: center;
+      margin-top: 50px;
+   }
+   .feedback img{
+      left: 40px;
+   }
+   .role{
+      display: block;
+   }
+   .btn{
+      margin-left: 120px;
+   }
+ }
